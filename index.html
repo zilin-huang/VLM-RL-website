@@ -66,7 +66,7 @@
                     <span class="author-block">
                       <a href="https://scholar.google.com/citations?user=wIGL3SQAAAAJ&hl=en" target="_blank">Junwei You</a><sup>1</sup>,</span>
                     <span class="author-block">
-                      <a href="https://scholar.google.com/citations?user=DPN2wc4AAAAJ&hl=en" target="_blank">Sikai Chen</a><sup>1,†</sup> </span>
+                      <a href="https://scholar.google.com/citations?user=DPN2wc4AAAAJ&hl=en" target="_blank">Sikai Chen</a><sup>1,*</sup> </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
@@ -312,32 +312,58 @@
       </div>
       <div class="subtitle-container" style="max-width: 100%; margin: auto;">
         <h2 class="subtitle" style="font-size: 15px; text-align: justify;">
-          Table 1 shows that VLM-RL outperforms both expert-designed and language model-based reward methods, achieving a balance between safety and efficiency. VLM-RL reaches a higher average speed (17.4 km/h) and the best route completion (4.4) while maintaining a low collision rate (0.68) and collision speed (2.6 km/h). In comparison, expert-designed methods like TIRL fail to progress meaningfully, and Chen-SAC sacrifices safety for speed. Language model-based methods such as Revolve and LORD perform moderately but lack the stability and generalization of VLM-RL.
+          Table 1 shows that VLM-RL outperforms both expert-designed and language model-based reward methods, achieving a balance between safety and efficiency. VLM-RL reaches a higher average speed (17.4 ) and the best route completion (4.4) while maintaining a low collision rate (0.68) and collision speed (2.6). In comparison, expert-designed methods like TIRL fail to progress meaningfully, and Chen-SAC sacrifices safety for speed. Language model-based methods such as Revolve and LORD perform moderately but lack the stability and generalization of VLM-RL.
         </h2>
       </div>
     </div>
   </div>
 </section>
 
+<!-- Title Only -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3" style="font-size: 24px; max-width: 70%; margin: auto; text-align: left;">Visualization</h2> <!-- Title for the image -->
+    </div>
+  </div>
+</section>
+
+<!-- Subtitle -->
+<section class="hero is-small">
+  <div class="hero-body" style="padding-top: 0.5rem; padding-bottom: 1rem;">
+    <div class="container">
+      <h3 class="subtitle is-5" style="font-size: 18px; max-width: 70%; margin: auto; text-align: left;"><strong>Comparison with state-of-the-art</strong></h3>
+    </div>
+  </div>
+</section>
 
 <!-- Teaser video-->
 <section class="hero teaser">
-  <div class="container is-max-desktop">
+  <div class="container" style="max-width: 1100px; margin: auto;">
     <div class="hero-body">
-      <!-- Wrapper for the two videos with flexbox layout -->
+      <!-- Wrapper for three videos with flexbox layout -->
       <div style="display: flex; justify-content: space-between;">
         <!-- First video with its own title -->
-        <div style="width: 48%; text-align: center;">
+        <div style="width: 32%; text-align: center;">
           <video poster="" id="tree1" autoplay controls muted loop style="width: 100%;">
-            <source src="static/videos/Safebench_town2_normal/Safebench_town2_normal  (30-480).mp4" type="video/mp4">
+            <source src="static/videos/CLIP_town2_normal/CLIP_town2_normal (30-360).mp4" type="video/mp4">
           </video>
           <h2 class="subtitle" style="font-size: 15px;">
-            ChatScene (Town 02)
+            VLM-RL (Town 02)
           </h2>          
         </div>
         <!-- Second video with its own title -->
-        <div style="width: 48%; text-align: center;">
+        <div style="width: 32%; text-align: center;">
           <video poster="" id="tree2" autoplay controls muted loop style="width: 100%;">
+            <source src="static/videos/Safebench_town2_normal/Safebench_town2_normal  (30-360).mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle" style="font-size: 15px;">
+            Safebench (Town 02)
+          </h2>
+        </div>
+        <!-- Third video with its own title -->
+        <div style="width: 32%; text-align: center;">
+          <video poster="" id="tree3" autoplay controls muted loop style="width: 100%;">
             <source src="static/videos/Revovle_town2_normal/Revovle_town2_normal (30-360).mp4" type="video/mp4">
           </video>
           <h2 class="subtitle" style="font-size: 15px;">
@@ -349,15 +375,6 @@
   </div>
 </section>
 <!-- End teaser video -->
-
-<!-- Title Only -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3" style="font-size: 24px; max-width: 70%; margin: auto; text-align: left;">Demo</h2> <!-- Title for the image -->
-    </div>
-  </div>
-</section>
 
 
 <!-- Teaser video-->
